@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha 'testsCases/*.test.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
     "run": "node ./index.js",
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "build": "npm run"
   },
   "engines": {
     "node": ">=14.0.0 <16.0.0"
