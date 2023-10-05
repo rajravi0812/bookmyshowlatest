@@ -1,5 +1,7 @@
 const mongodb = require("mongodb");
-const mongoURI = "mongodb://localhost:27017/" + "bookMovie"
+require('dotenv').config();
+
+const mongoURI = process.env.MONGO_DB_SERVER;
 let mongoose = require("mongoose");
 const { bookMovieSchema } = require("./schema"); 
 
